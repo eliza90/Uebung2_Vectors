@@ -1,4 +1,4 @@
-﻿Der Buildvorgang wurde am 23.04.2014 18:45:53 gestartet.
+﻿Der Buildvorgang wurde am 24.04.2014 23:05:00 gestartet.
      1>Projekt "F:\Studium\1.Semester\C++CG\Uebungen\Uebung2_Vectors\Uebung2_Vectors\Uebung2_Vectors.vcxproj" auf Knoten "2", Rebuild Ziel(e).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\Uebung2_Vectors.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
@@ -6,20 +6,14 @@
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\Uebung2_Vectors.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp Vector3f.cpp
          Vector3f.cpp
          main.cpp
-     1>f:\studium\1.semester\c++cg\uebungen\uebung2_vectors\uebung2_vectors\main.cpp(44): error C2664: 'cpp4cg::Vector<float,3>::Vector(const cpp4cg::Vector<float,3> &)' : Konvertierung von Argument 1 von 'cpp4cg::AbstractVectorN<T,3>' in 'const cpp4cg::Vector<float,3> &' nicht möglich
-                 with
-                 [
-                     T=float
-                 ]
-                 Ursache: Konvertierung von 'cpp4cg::AbstractVectorN<T,3>' in 'const cpp4cg::Vector<float,3>' nicht möglich
-                 with
-                 [
-                     T=float
-                 ]
-                 Kein benutzerdefinierter Konvertierungsoperator verfügbar, der diese Konvertierung durchführen kann, oder der Operator kann nicht aufgerufen werden
          Code wird generiert...
-     1>Die Erstellung des Projekts "F:\Studium\1.Semester\C++CG\Uebungen\Uebung2_Vectors\Uebung2_Vectors\Uebung2_Vectors.vcxproj" ist abgeschlossen, Rebuild Ziel(e) -- FEHLER.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\Studium\1.Semester\C++CG\Uebungen\Uebung2_Vectors\Debug\Uebung2_Vectors.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\Studium\1.Semester\C++CG\Uebungen\Uebung2_Vectors\Debug\Uebung2_Vectors.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\Studium\1.Semester\C++CG\Uebungen\Uebung2_Vectors\Debug\Uebung2_Vectors.lib" /MACHINE:X86 Debug\stdafx.obj
+         Debug\main.obj
+         Debug\Vector3f.obj
+         Uebung2_Vectors.vcxproj -> F:\Studium\1.Semester\C++CG\Uebungen\Uebung2_Vectors\Debug\Uebung2_Vectors.exe
+     1>Die Erstellung des Projekts "F:\Studium\1.Semester\C++CG\Uebungen\Uebung2_Vectors\Uebung2_Vectors\Uebung2_Vectors.vcxproj" ist abgeschlossen, Rebuild Ziel(e).
 
-Fehler beim Buildvorgang.
+Build erfolgreich.
 
-Verstrichene Zeit 00:00:00.88
+Verstrichene Zeit 00:00:01.63

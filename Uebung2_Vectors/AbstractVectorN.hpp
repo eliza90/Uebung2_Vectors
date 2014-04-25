@@ -8,8 +8,7 @@
 namespace cpp4cg {
 	template<class T, unsigned int D> class AbstractVectorN{
 	private:
-		//T data[D];
-		const T epsilon = 0.000001f;
+		const T epsilon = static_cast<T>(0.000001);
 	protected:
 		T data[D];
 	public:
@@ -52,7 +51,7 @@ namespace cpp4cg {
 
 	template<class T, unsigned int D>
 	T AbstractVectorN<T, D>::length() const{
-		return sqrt(dot(*this));
+		return return static_cast<T>(sqrt(dot(*this)));
 	}
 
 	//static_cast<T> geht hier nicht wieso
@@ -60,17 +59,17 @@ namespace cpp4cg {
 	T AbstractVectorN<T, D>::dot(const AbstractVectorN<T, D>& rhs) const{
 		T product(0);
 		for (int i = 0; i < D; ++i){
-			product += this->data[i] * rhs[i];
+			product += this->data[i] * static_cast<T>(rhs[i]);
 		}
 		return product;
 	}
 
 	template<class T, unsigned int D>
 	void AbstractVectorN<T, D>::normalize(){
-		T magnitude = length();
+		T magnitude = static_cast<T>(length());
 		if (magnitude != 0){
 			for (int i = 0; i < D; ++i){
-				this->data[i] = this->data[i] / magnitude;
+				this->data[i] /= magnitude;
 			}
 		}
 	}
