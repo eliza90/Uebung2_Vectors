@@ -7,12 +7,11 @@
 
 namespace cpp4cg {
 	template<class T, unsigned int D> class AbstractVectorN{
-	private:
-		const T epsilon = static_cast<T>(0.000001);
 	protected:
+		const T epsilon = static_cast<T>(0.000001);
 		T data[D];
 	public:
-		typedef T value_type;
+		typedef T value_type;		
 		AbstractVectorN();
 		AbstractVectorN(const AbstractVectorN<T,D>& src);
 		~AbstractVectorN(); //destructor
@@ -51,7 +50,7 @@ namespace cpp4cg {
 
 	template<class T, unsigned int D>
 	T AbstractVectorN<T, D>::length() const{
-		return return static_cast<T>(sqrt(dot(*this)));
+		return static_cast<T>(sqrt(dot(*this)));
 	}
 
 	//static_cast<T> geht hier nicht wieso
@@ -133,9 +132,9 @@ namespace cpp4cg {
 	//todo
 	template<class T, unsigned int D>
 	bool AbstractVectorN<T, D>::operator==(const AbstractVectorN<T, D>& rhs){
-		AbstractVectorN v = *this;
+		AbstractVectorN<T, D> v = *this;
 		for (int i = 0; i < D; ++i){
-			if (!abs(v[i] - rhs[i]) < epsilon)
+			if (abs(v[i] - rhs[i]) > epsilon)
 			{
 				return false;
 			}
